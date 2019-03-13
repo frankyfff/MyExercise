@@ -1,108 +1,61 @@
 package aufgaben;
 
+import java.awt.List;
 import java.util.ArrayList;
+
+import javax.swing.plaf.ToolBarUI;
 
 public class Loesung_13_03 {
 
 	public static void main(String[] args) {
-	
-		Test t = new Test();
-		String[] arr = { "mo", "di", "mi" };
-		t.transform("AAAA");
-		t.transform("BBBB");
-		t.transform("CCCC");
-		t.ausgabe();
-//		ArrayList<String> list = .transform(arr);
-//		System.out.println(list);
 
+		String[] arr = { "mo", "di", "mi" };
+
+		ArrayList<String> list = transform(arr, new ToUpperCase());
+
+		System.out.println(list); // [MO, DI, MI]
+		
+		Transformation ttt = new ABC();
+		
+		list = transform(arr, ttt);
+		System.out.println(list);
 	}
+
 	
-//	class InnerClass implements Transformation{
-//
-//		@Override
-//		public ArrayList transform(String[] ar) {
-//			ArrayList<String> tmp = new ArrayList<>();
-//			
-//			for (int i = 0; i < ar.length; i++) {
-//				tmp.add(ar[i].toUpperCase());
-//			}
-//			return tmp;
-//		}
-//		
-//	}
+	
+	private static ArrayList<String> transform(String[] arr, Transformation t) {
+
+		ArrayList<String> tmp = new ArrayList<>();
+		for (String string : arr) {
+			String str = t.execute(string);
+			tmp.add(str);
+		}
+		return tmp;
+	}
 	
 	
 
 }
 
 interface Transformation {
-	public abstract ArrayList transform(String[] ar);
-
+	
+	public abstract String execute(String s);
 }
 
-
-class Test implements Transformation {
-
-	ArrayList<String> tmp;
-	StringBuilder sb = new StringBuilder();
-	
-	@Override
-	public ArrayList transform(String[] ar) {
-		tmp = new ArrayList<>();
-		
-		for (int i = 0; i < ar.length; i++) {
-			tmp.add(ar[i].toUpperCase());
-		}
-		return tmp;
+class ToUpperCase implements Transformation {
+	public String execute (String s) {
+		return "(" + s + ")";
 	}
-	
-	//---------------------------------------------------------
-	
-	public ArrayList transform(String[] ar, String punkt) {
-		tmp = new ArrayList<>();
-		
-		
-		
-		for (int i = 0; i < ar.length; i++) {
-			
-			if (punkt == ".") {
-				tmp.add(ar[i].concat(punkt));
-			} else {
-				tmp.add(ar[i] + "("+ ar[i].length() + ")");
-			}
-			
-		}
-		return tmp;
-	}
-	//----------------------------------------------------------
-	
-	public StringBuilder transform(String tmp) {
-		
-		
-		sb.append(tmp);
-		return sb;
-	}
-	
-	
-	
-	//---------------------------------------------------------
-	
-	public void ausgabe() {
-//		for(String s : tmp) {
-//		
-//			System.out.println(s);
-//		}
-		System.out.println(sb.toString());
-	}
-	
-
-	
-	
-
-	
-	
 }
 
-//abstract class Transformation {
-//	  public abstract static ArrayList transform(String[] ar);
-//}
+class WithPunkt implements Transformation {
+	public String execute (String s) {
+		return s + ".";
+	}
+}
+
+class ABC extends WithPunkt {
+//	public String execute (String s) {
+//		return s + "abcccc";
+//	}
+}
