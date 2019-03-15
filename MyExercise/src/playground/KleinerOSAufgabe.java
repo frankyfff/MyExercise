@@ -6,7 +6,9 @@ public class KleinerOSAufgabe {
 	public static void main(String[] args) {
 		
 		//1
-		OS myOS;
+		OS myOS = new KleinerOSAufgabe();
+		
+		
 		
 		
 		//2

@@ -1,5 +1,7 @@
 package enums;
 
+import java.io.IOException;
+
 enum Size {
 	SMALL(0.5), 
 	MEDIUM, 
@@ -38,6 +40,8 @@ public class B05_eigener_Code_in_enum {
 //		Size[] d = Size.values();
 //		for (int i = 0; i < 3; i++) {
 //			System.out.println(d[i]);
+		
+		
 //		}
 	}
 
