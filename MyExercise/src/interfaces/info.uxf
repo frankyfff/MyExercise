@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>200</y>
+      <w>270</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>StringComparatorReverse
+--
+
+--
++public int compare(String s1, String s2);
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>130</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>50</y>
+      <w>320</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+Comparator
+--
++public abstract int compare(String s1, String s2);
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>220</x>
+      <y>340</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Sortieren
+--
+
+--
++static void main(String[] args);
++static void stringSortieren();
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>280</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+</diagram>
