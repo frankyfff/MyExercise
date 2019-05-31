@@ -1,6 +1,7 @@
-package vererbung;
+package ClassDesign.vererbung;
 
 class Auto {
+	
 	static final int MIN_BAUJAHR = 1886;
 	
 	public static int getMinBaujahr() {
@@ -30,5 +31,7 @@ public class B02_erben {
 		System.out.println( PKW.MIN_BAUJAHR );
 		System.out.println( PKW.getMinBaujahr());
 		System.out.println( new PKW() );
+		
+		
 	}
 }

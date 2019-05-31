@@ -9,7 +9,7 @@ class Dozent extends Person { //Dozent IS-A Person
 }
 
 class Mitarbeiter{}
-// class Java Dozent extends Dozent, Mitarbeiter {}
+// class JavaDozent extends Dozent, Mitarbeiter {}
 // Compilerfehler: nur eine Basisklasse darf es geben
 
 
