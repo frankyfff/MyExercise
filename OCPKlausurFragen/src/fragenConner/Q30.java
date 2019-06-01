@@ -1,6 +1,6 @@
-package aufgaben;
+package fragenConner;
 
-public class Loesung_15_03 {
+public class Q30 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

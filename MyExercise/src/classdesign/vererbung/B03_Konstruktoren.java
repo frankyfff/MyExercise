@@ -3,7 +3,6 @@ package vererbung;
 
 class C1{
 	/***
-	 * 
 	 * default-Konstruktor, generiert vom Compiler:
 	 * 
 	 * C1(){
@@ -20,7 +19,7 @@ class C1{
  */
 class C2{
 	C2(int x){
-		// super(); // vom Compiler generiert
+		// super(); // com Compiler generiert
 	}
 }
 
