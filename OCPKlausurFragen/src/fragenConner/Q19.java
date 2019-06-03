@@ -23,13 +23,13 @@ public class Q19 {
 
 	public static void main(String[] args) {
 		// and the code fragment:
-		List<Product> products = Arrays.asList(
-				new Product(1, 10),     
-				new Product (2, 30),     
-				new Product (2, 30)
+		List<Productt> products = Arrays.asList(
+				new Productt(1, 10),     
+				new Productt (2, 30),     
+				new Productt (2, 30)
 		);
-		Product p = products.stream()
-				.reduce(new Product (4, 0), (p1,  p2) -> { p1.price += p2.price; return new Product (p1.id, p1.price);}); 
+		Productt p = products.stream()
+				.reduce(new Productt (4, 0), (p1,  p2) -> { p1.price += p2.price; return new Productt (p1.id, p1.price);}); 
 		
 				products.add(p); 
 				
