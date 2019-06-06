@@ -2,7 +2,7 @@ package fragenConner._00_20;
 
 //Given the definition of the Vehicle class:
 
-class Vehiclee {
+class Vehicle {
 	String name;
 
 	void setName(String name) {

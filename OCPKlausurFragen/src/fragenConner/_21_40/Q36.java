@@ -15,14 +15,14 @@ public class Q36 {
 
 	}
 	
-	/**
+	/*
 	 * What is the result?
 	 * 
 	 * 
-	 * A. 0
-	 * B. 1
-	 * C. A compilation error occurs at line n1.
-	 * D. A compilation error occurs at line n2.
+	 * A. 	0
+	 * B. 	1
+	 * C. 	A compilation error occurs at line n1.
+	 * D. 	A compilation error occurs at line n2.
 	 * 
 	 * 
 	 * Correct Answer: A

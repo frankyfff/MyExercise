@@ -30,22 +30,27 @@ public class Q13 {
 		// and the code fragment:
 		
 		List<Emp> emp = Arrays.asList (     
-				new Emp ("John", "Smith"),     
-				new Emp ("Peter", "Sam"),     
-				new Emp ("Thomas", "Wale")); 
+				new Emp("John", "Smith"),     
+				new Emp("Peter", "Sam"),     
+				new Emp("Thomas", "Wale")); 
 		emp.stream()
 		
 			//line n1
-		
+		.sorted(Comparator.comparing(Emp::getfName).reserved().thenComparing(Emp::getlName))
+		//.sorted(Comparator.comparing(Emp::getfName).thenComparing(Emp::getlName))
+		//.map(Emp::getfName).sorted(Comparator.reserveOrder())
+		//.map(Emp::getfName).sorted(Comparator.reserveOrder().map(Emp::getlName).reserved
 		.collect(Collectors.toList());
 	}
 	
 	/**
 	 * 
-	 * Which code fragment, when inserted at line n1, sorts the employees list in descending order of fNameand then ascending order of lName?
+	 * Which code fragment, 
+	 * when inserted at line n1, 
+	 * sorts the employees list in descending order of fNameand then ascending order of lName?
 	 * 
 	 * A. .sorted(Comparator.comparing(Emp::getfName).reserved().thenComparing(Emp::getlName))
-	 * B. .sorted (Comparator.comparing(Emp::getfName).thenComparing(Emp::getlName))
+	 * B. .sorted(Comparator.comparing(Emp::getfName).thenComparing(Emp::getlName))
 	 * C. .map(Emp::getfName).sorted(Comparator.reserveOrder())
 	 * D. .map(Emp::getfName).sorted(Comparator.reserveOrder().map(Emp::getlName).reserved
 	 * 

@@ -19,7 +19,7 @@ public class Q10 {
 		
 	}
 	
-	/**
+	/*
 	 * What is the result?
 	 * A. A file with the name log.txt is created in the /data directory and the content of the /data/december/log.txt file is copied to it.
 	 * B. The program executes successfully and does NOT change the file system.

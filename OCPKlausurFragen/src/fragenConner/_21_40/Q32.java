@@ -15,7 +15,7 @@ public class Q32 {
 		codes.forEach(c -> System.out.println(c));
 	}
 	
-	/**
+	/*
 	 * What is the result?
 	 * 
 	 * A. 	20.0

@@ -35,20 +35,25 @@ public class Q04 {
 	public static void main(String[] args) {
 		// and the code fragment:
 
-		List<Country> couList = Arrays.asList(new Country("Japan", Country.Continent.ASIA),
-				new Country("Italy", Country.Continent.EUROPE), new Country("Germany", Country.Continent.EUROPE));
+		List<Country> couList = Arrays.asList(
+				new Country("Japan", Country.Continent.ASIA),
+				new Country("Italy", Country.Continent.EUROPE), 
+				new Country("Germany", Country.Continent.EUROPE)
+		);
 
-		Map<Country.Continent, List<String>> regionNames = couList.stream().collect(
-				Collectors.groupingBy(Country::getRegion, Collectors.mapping(Country::getName, Collectors.toList())));
+		Map<Country.Continent, List<String>> regionNames = couList.stream()
+				.collect(Collectors.groupingBy(Country::getRegion, Collectors.mapping(Country::getName, Collectors.toList())));
 		System.out.println(regionNames);
 
 	}
 
-	/**
+	/*
 	 * A. {EUROPE = [Italy, Germany], ASIA = [Japan]} 
 	 * B. {ASIA = [Japan], EUROPE = [Italy, Germany]} 
 	 * C. {EUROPE = [Germany, Italy], ASIA =[Japan]} 
 	 * D. {EUROPE = [Germany], EUROPE = [Italy], ASIA = [Japan]}
+	 * 
+	 * 
 	 * 
 	 * Correct Answer: B
 	 */

@@ -10,28 +10,8 @@ import java.util.stream.Stream;
 public class Q01 {
 
 	public static void main(String[] args) throws IOException {
-		Path file = Paths.get("C:/Users/mamiri/Desktop/courses.txt");
-
-		
-		
-		Stream<String> fc = Files.lines(file); 
-		
-		
-		Consumer<String> tmp = new Consumer<String>() {
-
-			@Override
-			public void accept(String t) {
-				System.out.println(t);
-				
-			}
-		};
-		
-		fc.forEach(tmp);
-		
-		//fc.forEach (s -> System.out.println(s));
-		
+		Path file = Paths.get("courses.txt");
 		// line n1
-
 	}
 
 	/*

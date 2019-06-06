@@ -2,6 +2,7 @@ package fragenConner._00_20;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collector;
 
 //Given code fragments:
 
@@ -31,8 +32,8 @@ public class Q11 {
 				new Student ("Mark", "Java ME", "Chicago")); 
 		
 		stds.stream()
-			.collect(Collectors.groupingBy(Student::getCourse))
-			.forEach(src, res) -> System.out.println(scr));
+			.collect(Collector.groupingBy(Student::getCourse))
+			.forEach((src, res) -> System.out.println(scr));
 
 	}
 	

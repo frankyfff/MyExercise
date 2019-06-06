@@ -2,6 +2,8 @@ package fragenConner._00_20;
 
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Q16 {
 
@@ -15,11 +17,13 @@ public class Q16 {
 		int i;
 		char c;
 		
-		try(FileInputStream fis = new FileInputStream ("course.txt");         
+	
+		
+		try(FileInputStream fis = new FileInputStream("course.txt");         
 			InputStreamReader isr = new InputStreamReader(fis);) {         
-				while (isr.ready())   {   //line n1             
+				while (isr.ready()) {   //line n1             
 					isr.skip(2);             
-					i = isr.read ();             
+					i = isr.read();             
 					c = (char) i;
 					System.out.print(c);
 				}

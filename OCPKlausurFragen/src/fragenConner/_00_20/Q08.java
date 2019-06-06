@@ -21,22 +21,22 @@ public class Q08 {
 		Thread thread1 = new Thread(new MyThread());
 		Thread thread2 = new Thread(new MyThread());
 		Thread thread3 = new Thread(new MyThread());
-		
+
 		Thread[] ta = { thread1, thread2, thread3 };
-		
+
 		for (int x = 0; x < 3; x++) {
 			ta[x].start();
 		}
-
 	}
-	
-	/**
+
+	/*
 	 * Which statement is true?
 	 * 
-	 * A. The program prints 1 2 3 and the order is unpredictable.
-	 * B. The program prints 1 2 3.
-	 * C. The program prints 1 1 1.
+	 * A. The program prints 1 2 3 and the order is unpredictable. 
+	 * B. The program prints 1 2 3. 
+	 * C. The program prints 1 1 1. 
 	 * D. A compilation error occurs.
+	 * 
 	 * 
 	 * Correct Answer: A
 	 * 

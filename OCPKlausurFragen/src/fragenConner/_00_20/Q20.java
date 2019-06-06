@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import fragenConner._41_60.Book;
 
 // Given code fragments:
 
@@ -38,10 +37,11 @@ public class Q20 {
 		
 		List<Book>books = Arrays.asList(
 				new Book ("Beginning with Java", 2), 
-				new Book ("AGuide to Java Tour", 3)
+				new Book ("A Guide to Java Tour", 3)
 		);
 		
-		Collections.sort(books, new Book());System.out.print(books);
+		Collections.sort(books, new Book());
+		System.out.print(books);
 
 	}
 	

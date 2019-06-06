@@ -22,16 +22,19 @@ public class Q39 {
 	 * Which statement is true?
 	 * 
 	 * A. 	Moveable can be used as below:
+	 * 
 	 * 		Moveable<Integer> animal = n - > System.out.println("Running" + n); 
 	 * 		animal.run(100); 
 	 * 		animal.walk(20);
 	 * 
 	 * B. 	Moveable can be used as below:
+	 * 
 	 * 		Moveable<Integer> animal = n - > n + 10; 
 	 * 		animal.run(100); 
 	 * 		animal.walk(20);
 	 * 
 	 * C. 	Moveable can be used as below:
+	 * 
 	 * 		Moveable animal = (Integer n) - > System.out.println(n); 
 	 * 		animal.run(100); 
 	 * 		Moveable.walk(20);

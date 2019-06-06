@@ -44,7 +44,7 @@ public class Q22 {
 		String str1 = (String) f1.get();
 		String str2 = (String) f2.get();        //line n1
 		
-		System.out.println(str1+ " : " + str2);
+		System.out.println(str1 + " : " + str2);
 
 	}
 	

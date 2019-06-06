@@ -32,16 +32,17 @@ public class Q02 {
 	 * 
 	 * What is the result?
 	 * 
-	 * A. The method deletes all the .class files in the Projects directory and its
-	 * sub directories. 
 	 * 
-	 * B. The method deletes the .class files of the Projects
-	 * directory only. 
+	 * A. 	The method deletes all the .class files in the Projects directory and its
+	 * 		sub directories. 
 	 * 
-	 * C. The method executes and does not make any changes to the
-	 * Projects directory. 
+	 * B. 	The method deletes the .class files of the Projects
+	 *		directory only. 
 	 * 
-	 * D. The method throws an IOException.
+	 * C. 	The method executes and does not make any changes to the
+	 * 		Projects directory. 
+	 * 
+	 * D. 	The method throws an IOException.
 	 * 
 	 * 
 	 * 

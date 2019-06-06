@@ -28,11 +28,16 @@ public class Q17 {
 	 * What is the result?
 	 * 
 	 * A. Java 100
+	 * 
 	 * B. java.lang.string@<hashcode>java.lang.Integer@<hashcode>
+	 * 
 	 * C. A compilation error occurs. To rectify it, replace line n1with:     
 	 * 	  Test<Integer> type1 = new Test<>();
+	 * 
 	 * D. A compilation error occurs. To rectify it, replace line n2with:     
 	 *    type1.set (Integer(100));
+	 *    
+	 *    
 	 *    
 	 * Correct Answer: A
 	 * 

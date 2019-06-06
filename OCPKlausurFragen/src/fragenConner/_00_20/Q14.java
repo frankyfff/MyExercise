@@ -11,8 +11,10 @@ public class Q14 {
 	public static void main(String[] args) {
 		// Given code fragment:
 		
+	
+		
 		Stream<Path> files = Files.walk(Paths.get(System.getProperty("user.home")));     
-			files.forEach (fName -> {                    		//line n1         
+			files.forEach(fName -> {                    		//line n1         
 				try {Path aPath = fName.toAbsolutePath();    	//line n2
 						System.out.println(fName + ":" + 
 						Files.readAttributes(aPath, Basic.File.Attributes.class)
@@ -20,7 +22,7 @@ public class Q14 {
 					} catch(IOException ex) {             
 						ex.printStackTrace();
 					}
-			);}
+			});
 	}
 
 	/**

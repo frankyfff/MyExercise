@@ -14,6 +14,7 @@ class Worker extends Thread {
 			cb.await();
 			System.out.println("Worker…");
 		} catch (Exception ex) {
+			
 		}
 	}
 }
