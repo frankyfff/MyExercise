@@ -1,0 +1,68 @@
+Fragen, die dabei waren (ohne Gewähr)
+
+6
+12
+17
+19
+23 ANDERE Aufgabenstellung: /data/december/log.txt existiert nicht 
+	A) A file is created ...
+	B) executes successfully and does NOT...
+	C) FileNotFoundException
+	D) NoSuchFileException
+24 ANDERE Aufgabenstellung: (...).forEach((src, res) -> System.out.println(res));
+31
+47 ANDERE Aufgabenstellung: Cake extends Cream (Cream final)
+54
+55 mit drei Customern
+63 ANDERE Aufgabenstellung: Vehicle ride() throws Exception, SolarVehicle ride() throws FuelNotAvailException => unhandled Exception in SolarVehicle ride()
+77
+79
+81
+86 ANDERE Aufgabenstellung: path1: /software/.././sys/readme.txt
+87 ANDERE Aufgabenstellung: filter(Product::ProductFilter::isAvailable)
+88 ANDERE Aufgabenstellung: currentLocale mit en_CA => englisches Bundle
+89
+90 leicht ANDERE Aufgabenstellung
+91 Lösung: Exception 1, weil mit APPEND das file existieren muss
+93
+94 leicht ANDERE Aufgabenstellung
+95
+97
+98
+99
+100 ANDERE Aufgabenstellung
+101 ANDERE Aufgabenstellung: String strBuf = new String("Course");
+102
+104
+105
+107 ANDERE Aufgabenstellung: console.readLine assigned to char[] => Compilerfehler
+108
+109
+110 ANDERE Aufgabenstellung: LengthCalculator interface mit Returntype int => Function
+111 ANDERE Aufgabenstellung: mit -ea flag!
+112 ANDERE Aufgabenstellung: office_start ist LocalTime.of(6,30)
+113
+114
+115 ANDERE Aufgabenstellung: peek statt remove
+116
+118
+119 Compilerfehler line n2, da raw type
+120-125
+126 ANDERE Aufgabenstellung: überladener Konstruktor => zwei Anntworten: demo polymorphism
+127 ANDERE Aufgabenstellung: not allow c1, allow c2, andere choices
+128-134
+135 ANDERE Aufgabenstellung: class Card hat abstrakte Methode, die nicht in SoundCard implementiert wird; RICHTIG: class Product mit public void move() in der Prüfung
+136
+137
+139-146
+147 ANDERE Aufgabenstellung: statt resource.getObject(1), resource.getString("hello_msg")
+148
+149 ANDERE Aufgabenstellung: kein updateRow() und refreshRow(), stattdessen rs.insertRow() und dann sout
+150-154
+156
+157
+158 s. Q 24
+159
+
+ 
+
